@@ -18,3 +18,11 @@ func _process(delta: float) -> void:
 		$Sprite2D.scale.x *= -1
 		direction *= -1
 	position.x += speed * direction
+
+
+func _on_body_entered(body: Node) -> void:
+	if body.name == "main_character":
+		pass # Replace with code to kill main character
+	else:
+		$Sprite2D.scale.x *= -1
+		direction *= -1
