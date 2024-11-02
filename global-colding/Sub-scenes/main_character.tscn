@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://qlm1pr0ysi5f"]
 
 [ext_resource type="Script" path="res://Sub-scenes/main_character.gd" id="1_5lp5y"]
-[ext_resource type="Texture2D" uid="uid://bp03fmv2tc7v" path="res://Character Sprites/controllable_girl.png" id="1_a5q7g"]
+[ext_resource type="Texture2D" uid="uid://bp03fmv2tc7v" path="res://Sprites/controllable_girl.png" id="1_a5q7g"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4nl5q"]
 size = Vector2(88, 96)
