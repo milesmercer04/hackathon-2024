@@ -1,0 +1,53 @@
+[gd_scene load_steps=5 format=3 uid="uid://e3lr12652gdd"]
+
+[ext_resource type="FontFile" uid="uid://d0kp33s0x4o0h" path="res://Fonts/Adventurer.ttf" id="1_mcikh"]
+[ext_resource type="Script" path="res://Sub-scenes/Textbox/textbox.gd" id="1_o8s7w"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8xomt"]
+bg_color = Color(0.246248, 0.245968, 0.60325, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1.02278e-07, 0.15237, 0.164776, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_mod5n"]
+font = ExtResource("1_mcikh")
+font_size = 30
+
+[node name="Textbox" type="CanvasLayer"]
+script = ExtResource("1_o8s7w")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 152.0
+grow_horizontal = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 20
+
+[node name="TextboxContainer" type="Panel" parent="MarginContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_8xomt")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/TextboxContainer"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 15
+
+[node name="Label" type="Label" parent="MarginContainer/TextboxContainer/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+text = "
+"
+label_settings = SubResource("LabelSettings_mod5n")
+autowrap_mode = 3
