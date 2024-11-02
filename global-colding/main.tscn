@@ -4,6 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://cwxrpxplxc7b0" path="res://Backgrounds/terrain.png" id="2_ii44a"]
 [ext_resource type="PackedScene" uid="uid://qlm1pr0ysi5f" path="res://Sub-scenes/Characters/main_character.tscn" id="3_5hdnr"]
 [ext_resource type="Texture2D" uid="uid://bcj086085axxx" path="res://Backgrounds/color_blocks.png" id="3_853fi"]
+[ext_resource type="PackedScene" uid="uid://dfr2n8frwho3t" path="res://Sub-scenes/Ice Bolt/ice_bolt.tscn" id="4_iqfx8"]
+[ext_resource type="PackedScene" uid="uid://dypnp24o7l1iw" path="res://Sub-scenes/Car/car.tscn" id="5_l7csk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_duos4"]
 texture = ExtResource("2_ii44a")
@@ -2488,3 +2490,6 @@ tile_set = SubResource("TileSet_jeibn")
 
 [node name="Player Character" parent="." instance=ExtResource("3_5hdnr")]
 position = Vector2(117, 240)
+
+[node name="Car" parent="." instance=ExtResource("5_l7csk")]
+position = Vector2(452, 569)
