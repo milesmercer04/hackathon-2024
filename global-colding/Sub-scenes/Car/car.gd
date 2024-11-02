@@ -6,11 +6,11 @@ var direction: int = -1
 var is_frozen: bool = false
 var start_position: Vector2
 
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	$Sprite2D.scale.x = abs($Sprite2D.scale.x)
 	start_position = position
-
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -19,10 +19,11 @@ func _process(delta: float) -> void:
 		direction *= -1
 	position.x += speed * direction
 
-
 func _on_body_entered(body: Node) -> void:
-	if body.name == "main_character":
-		pass # Replace with code to kill main character
+	print(body.name)
+	if body.name == "Player Character":
+		print("Killing character")
+		body.die()
 	else:
 		$Sprite2D.scale.x *= -1
 		direction *= -1
