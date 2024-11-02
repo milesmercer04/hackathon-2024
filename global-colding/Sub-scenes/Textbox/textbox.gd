@@ -35,10 +35,14 @@ func _process(_delta):
 			else:
 				hide_textbox()
 		State.READING:
+			
 			if Input.is_action_just_pressed("ui_accept"):
 				tween.kill()
-				label.visible_ratio = 1.0
-				change_state(State.FINISHED)
+				if label.visible_ratio == 1.0:
+					change_state(State.READY)
+				else:
+					label.visible_ratio = 1.0
+					change_state(State.FINISHED)
 		State.FINISHED:
 			if Input.is_action_just_pressed("ui_accept"):
 				change_state(State.READY)
