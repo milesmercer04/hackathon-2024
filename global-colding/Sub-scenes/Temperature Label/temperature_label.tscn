@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://bnfwy6jle4gmh"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_887cb"]
+
+[node name="TemperatureLabel" type="Node2D"]
+
+[node name="TemperatureBar" type="ProgressBar" parent="."]
+offset_right = 4.0
+offset_bottom = 27.0
+
+[node name="ObjectDetector" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectDetector"]
+shape = SubResource("WorldBoundaryShape2D_887cb")
