@@ -17,3 +17,6 @@ func _physics_process(delta: float) -> void:
 		$Sprite2D.scale.x *= -1		# Flip sprite horizontally
 	velocity.x = SPEED * direction
 	move_and_slide()				# Apply velocity to move Car
+
+func freeze():
+	$Sprite2D.modulate = Color(0.2, 0.2, 0.5) # blue shade
