@@ -37,7 +37,9 @@ func _physics_process(delta: float) -> void:
 	if isLeft:
 		character.scale.x *= -1
 	move_and_slide()
-	
+
+func die():
+	self.queue_free()
 
 func shoot():
 	var bolt = ICE_BOLT.instantiate()
