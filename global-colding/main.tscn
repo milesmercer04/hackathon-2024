@@ -3,8 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://b8lsv7gwmsgwr" path="res://Backgrounds/aHR0cHM6Ly9iLnN0YWJsZWNvZy5jb20vY2I0YTI3YWEtZmQ2NC00N2M4LTgwOWUtNDg4YTc1NDA1M2U3LmpwZWc.png" id="1_qws2s"]
 [ext_resource type="Texture2D" uid="uid://cwxrpxplxc7b0" path="res://Backgrounds/terrain.png" id="2_ii44a"]
 [ext_resource type="PackedScene" uid="uid://qlm1pr0ysi5f" path="res://Sub-scenes/Characters/main_character.tscn" id="3_5hdnr"]
-[ext_resource type="Texture2D" uid="uid://bcj086085axxx" path="res://Backgrounds/color_blocks.png" id="3_853fi"]
-[ext_resource type="PackedScene" uid="uid://dypnp24o7l1iw" path="res://Sub-scenes/Car/car.tscn" id="5_l7csk"]
+[ext_resource type="Texture2D" uid="uid://cjbuoya4707dn" path="res://Backgrounds/color_blocks.png" id="3_853fi"]
+[ext_resource type="PackedScene" uid="uid://cailigtoe3ons" path="res://Sub-scenes/Car/car.tscn" id="5_l7csk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_duos4"]
 texture = ExtResource("2_ii44a")
@@ -2491,4 +2491,4 @@ tile_set = SubResource("TileSet_jeibn")
 position = Vector2(117, 240)
 
 [node name="Car" parent="." instance=ExtResource("5_l7csk")]
-position = Vector2(452, 569)
+position = Vector2(305, 579)
