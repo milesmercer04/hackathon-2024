@@ -1,10 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://dypnp24o7l1iw"]
+[gd_scene load_steps=4 format=3 uid="uid://dypnp24o7l1iw"]
 
 [ext_resource type="Script" path="res://Sub-scenes/Car/car.gd" id="1_jscce"]
 [ext_resource type="Texture2D" uid="uid://uesbn7vxrfl5" path="res://Character Sprites/car.png" id="1_ks3du"]
-
-[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_lxopy"]
-blend_mode = 1
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fg564"]
 size = Vector2(81, 46)
@@ -15,7 +12,6 @@ script = ExtResource("1_jscce")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
-material = SubResource("CanvasItemMaterial_lxopy")
 scale = Vector2(-4, 4)
 texture = ExtResource("1_ks3du")
 
