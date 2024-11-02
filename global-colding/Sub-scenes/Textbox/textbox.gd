@@ -23,7 +23,7 @@ func _ready():
 	queue_text("Girl you have been chosen...")
 	queue_text("The heat death of the universe is foretold in humanity's hubris")
 	queue_text("Global warming will lead to the end of us all!")
-	queue_text("It's up to you to become of ice in order to stop a terrible fate for all sentient life in the universe")
+	queue_text("It's up to you to become a champion of ice in order to stop a terrible fate for all sentient life in the universe")
 	queue_text("Go forth and make glorious, resplendent ice!")
 
 func _process(_delta):
