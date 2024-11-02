@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cwxrpxplxc7b0"
-path="res://.godot/imported/pixel-art-game-tile-seamless-patterns-surfaces_8071-37663.png-900a2cea2c0c9d9ca61bfb6bc1424e01.ctex"
+path="res://.godot/imported/terrain.png-36efd8925b130bee7895e894eba90c6d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Backgrounds/pixel-art-game-tile-seamless-patterns-surfaces_8071-37663.png"
-dest_files=["res://.godot/imported/pixel-art-game-tile-seamless-patterns-surfaces_8071-37663.png-900a2cea2c0c9d9ca61bfb6bc1424e01.ctex"]
+source_file="res://Backgrounds/terrain.png"
+dest_files=["res://.godot/imported/terrain.png-36efd8925b130bee7895e894eba90c6d.ctex"]
 
 [params]
 
