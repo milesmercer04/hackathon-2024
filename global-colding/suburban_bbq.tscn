@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=4 uid="uid://cmtxs8o5dbptd"]
+[gd_scene load_steps=5 format=4 uid="uid://b8hpjwfirlj1w"]
 
 [ext_resource type="Texture2D" uid="uid://0sgnk4dsqln5" path="res://Backgrounds/Blue.png" id="1_iawgf"]
 [ext_resource type="Texture2D" uid="uid://cwxrpxplxc7b0" path="res://Backgrounds/terrain.png" id="2_8q0bx"]
