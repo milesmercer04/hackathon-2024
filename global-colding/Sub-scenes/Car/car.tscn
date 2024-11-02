@@ -8,6 +8,11 @@ size = Vector2(123, 73.5)
 
 [node name="Car" type="RigidBody2D"]
 position = Vector2(133, 87)
+collision_layer = 0
+collision_mask = 3
+mass = 200.0
+contact_monitor = true
+max_contacts_reported = 100
 script = ExtResource("1_jscce")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -17,3 +22,5 @@ texture = ExtResource("1_ks3du")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_a3iwv")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
