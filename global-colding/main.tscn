@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dh4lyrryrxi4g"]
 
-[ext_resource type="Texture2D" uid="uid://d3568fxoogddp" path="res://Backgrounds/world-map-pixel-art-vector.jpg" id="1_475nm"]
+[ext_resource type="Texture2D" uid="uid://b8lsv7gwmsgwr" path="res://Backgrounds/aHR0cHM6Ly9iLnN0YWJsZWNvZy5jb20vY2I0YTI3YWEtZmQ2NC00N2M4LTgwOWUtNDg4YTc1NDA1M2U3LmpwZWc.png" id="1_qws2s"]
 
 [node name="Node" type="Node"]
 
@@ -12,5 +12,5 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
-texture = ExtResource("1_475nm")
+texture = ExtResource("1_qws2s")
 expand_mode = 1
