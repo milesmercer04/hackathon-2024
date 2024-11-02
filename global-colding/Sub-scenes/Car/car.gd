@@ -1,29 +1,19 @@
-extends RigidBody2D
+class_name Car
+extends CharacterBody2D
 
-var speed: int = 10
-var move_distance: int = 200
-var direction: int = -1
-var is_frozen: bool = false
+const SPEED: int = 150
+const MAX_DISTANCE: int = 200
+var direction: int = 1
 var start_position: Vector2
 
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	$Sprite2D.scale.x = abs($Sprite2D.scale.x)
+func _on_ready() -> void:
 	start_position = position
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	if abs(position.x - start_position.x) >= move_distance:
-		$Sprite2D.scale.x *= -1
-		direction *= -1
-	position.x += speed * direction
 
-func _on_body_entered(body: Node) -> void:
-	print(body.name)
-	if body.name == "Player Character":
-		print("Killing character")
-		body.die()
-	else:
-		$Sprite2D.scale.x *= -1
-		direction *= -1
+func _physics_process(delta: float) -> void:
+	if abs(position.x - start_position.x) >= MAX_DISTANCE:
+		direction *= -1				# Reverse direction
+		$Sprite2D.scale.x *= -1		# Flip sprite horizontally
+	velocity.x = SPEED * direction
+	move_and_slide()				# Apply velocity to move Car
