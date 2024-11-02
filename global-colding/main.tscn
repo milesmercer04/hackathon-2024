@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=4 uid="uid://dh4lyrryrxi4g"]
+[gd_scene load_steps=8 format=4 uid="uid://dh4lyrryrxi4g"]
 
 [ext_resource type="Texture2D" uid="uid://b8lsv7gwmsgwr" path="res://Backgrounds/aHR0cHM6Ly9iLnN0YWJsZWNvZy5jb20vY2I0YTI3YWEtZmQ2NC00N2M4LTgwOWUtNDg4YTc1NDA1M2U3LmpwZWc.png" id="1_qws2s"]
 [ext_resource type="Texture2D" uid="uid://cwxrpxplxc7b0" path="res://Backgrounds/terrain.png" id="2_ii44a"]
 [ext_resource type="PackedScene" uid="uid://qlm1pr0ysi5f" path="res://Sub-scenes/Characters/main_character.tscn" id="3_5hdnr"]
 [ext_resource type="PackedScene" uid="uid://dfr2n8frwho3t" path="res://Sub-scenes/Ice Bolt/ice_bolt.tscn" id="4_iqfx8"]
+[ext_resource type="PackedScene" uid="uid://dypnp24o7l1iw" path="res://Sub-scenes/Car/car.tscn" id="5_l7csk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_duos4"]
 texture = ExtResource("2_ii44a")
@@ -2454,3 +2455,6 @@ position = Vector2(117, 240)
 
 [node name="Ice Bolt" parent="." instance=ExtResource("4_iqfx8")]
 position = Vector2(349, 423)
+
+[node name="Car" parent="." instance=ExtResource("5_l7csk")]
+position = Vector2(452, 569)
