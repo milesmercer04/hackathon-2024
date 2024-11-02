@@ -2492,6 +2492,5 @@ tile_set = SubResource("TileSet_jeibn")
 position = Vector2(117, 240)
 
 [node name="Car" parent="." instance=ExtResource("5_l7csk")]
-position = Vector2(452, 568)
-
+position = Vector2(305, 579)
 [node name="Textbox" parent="." instance=ExtResource("6_newmc")]

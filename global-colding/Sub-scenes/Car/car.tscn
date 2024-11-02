@@ -1,26 +1,22 @@
-[gd_scene load_steps=4 format=3 uid="uid://dypnp24o7l1iw"]
+[gd_scene load_steps=4 format=3 uid="uid://cailigtoe3ons"]
 
 [ext_resource type="Script" path="res://Sub-scenes/Car/car.gd" id="1_jscce"]
 [ext_resource type="Texture2D" uid="uid://uesbn7vxrfl5" path="res://Character Sprites/car.png" id="1_ks3du"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_a3iwv"]
-size = Vector2(123, 73.5)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fg564"]
+size = Vector2(81, 46)
 
-[node name="Car" type="RigidBody2D"]
-position = Vector2(133, 87)
-collision_layer = 0
-collision_mask = 3
-mass = 200.0
-contact_monitor = true
-max_contacts_reported = 100
+[node name="Car" type="CharacterBody2D"]
+position = Vector2(372, 259)
 script = ExtResource("1_jscce")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
-scale = Vector2(-5.406, 5.406)
+scale = Vector2(-4, 4)
 texture = ExtResource("1_ks3du")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_a3iwv")
+position = Vector2(1.5, -1)
+shape = SubResource("RectangleShape2D_fg564")
 
-[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="ready" from="." to="." method="_on_ready"]
