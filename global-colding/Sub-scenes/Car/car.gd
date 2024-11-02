@@ -14,7 +14,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if abs(position.x - start_position.x) >= move_distance or :
+	if abs(position.x - start_position.x) >= move_distance:
 		$Sprite2D.scale.x *= -1
 		direction *= -1
 	position.x += speed * direction
