@@ -20,7 +20,7 @@ var text_queue = []
 func _ready():
 	print("Starting state: State.READY")
 	hide_textbox()
-	queue_text("Girl you have been chosen...")
+	queue_text("Girl you have been chosen...                       (Press enter to continue)")
 	queue_text("The heat death of the universe is foretold in humanity's hubris")
 	queue_text("Global warming will lead to the end of us all!")
 	queue_text("It's up to you to become a champion of ice in order to stop a terrible fate for all sentient life in the universe")
@@ -33,6 +33,7 @@ func _process(_delta):
 				tween = create_tween()
 				display_text()
 			else:
+				change_level()
 				hide_textbox()
 		State.READING:
 			
@@ -80,3 +81,14 @@ func change_state(next_state):
 
 func _on_Tween_tween_completed(object, key):
 	change_state(State.FINISHED)
+
+func change_level():
+	# Remove the current level
+	var root = self.get_parent().get_parent()
+	var level = self.get_parent()
+	level.queue_free()
+
+	# Add the next level
+	var next_level_resource = load("res://Levels/suburban_bbq.tscn")
+	var next_level = next_level_resource.instantiate()
+	root.add_child(next_level)
