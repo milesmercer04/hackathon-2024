@@ -9,7 +9,7 @@ var start_position: Vector2
 
 func _on_ready() -> void:
 	start_position = position
-
+	add_to_group("heat_sources")
 
 func _physics_process(delta: float) -> void:
 	if abs(position.x - start_position.x) >= MAX_DISTANCE:
@@ -17,3 +17,4 @@ func _physics_process(delta: float) -> void:
 		$Sprite2D.scale.x *= -1		# Flip sprite horizontally
 	velocity.x = SPEED * direction
 	move_and_slide()				# Apply velocity to move Car
+	
