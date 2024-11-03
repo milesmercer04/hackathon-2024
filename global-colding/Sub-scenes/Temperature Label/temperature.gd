@@ -1,7 +1,7 @@
 extends Control
 
 # Define the temperature bar and area detection
-@onready var temperature_bar = $ProgressBar
+@onready var temperature_bar = $TemperatureBar
 @onready var object_detector = $ObjectDetector
 
 # Temperature parameters
@@ -12,8 +12,9 @@ var transition_speed = 5.0  # Speed of the transition (higher = faster)
 
 func _ready():
 	# Connect the signal when an object enters or exits the area
-	object_detector.connect("body_entered", self, "_on_body_entered")
-	object_detector.connect("body_exited", self, "_on_body_exited")
+	object_detector.body_entered.connect(self, "_on_body_entered")
+	object_detector.body_exited.connect(self, "_on_body_exited")
+	print("temp")
 
 func _on_body_entered(body):
 	# Increase target temperature when an object enters the area
@@ -32,3 +33,5 @@ func _process(delta):
 	current_temperature = clamp(current_temperature, 0, temperature_bar.max_value)
 	temperature_bar.value = current_temperature
 	
+func show_temp_bar():
+	temperature_bar.show()
