@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cwxrpxplxc7b0" path="res://Backgrounds/terrain.png" id="2_ii44a"]
 [ext_resource type="PackedScene" uid="uid://qlm1pr0ysi5f" path="res://Sub-scenes/Characters/main_character.tscn" id="3_5hdnr"]
 [ext_resource type="Texture2D" uid="uid://cjbuoya4707dn" path="res://Backgrounds/color_blocks.png" id="3_853fi"]
-[ext_resource type="PackedScene" uid="uid://dypnp24o7l1iw" path="res://Sub-scenes/Car/car.tscn" id="5_l7csk"]
+[ext_resource type="PackedScene" uid="uid://cailigtoe3ons" path="res://Sub-scenes/Car/car.tscn" id="5_l7csk"]
 [ext_resource type="PackedScene" uid="uid://e3lr12652gdd" path="res://Sub-scenes/Textbox/textbox.tscn" id="6_newmc"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_duos4"]
@@ -2493,4 +2493,5 @@ position = Vector2(117, 240)
 
 [node name="Car" parent="." instance=ExtResource("5_l7csk")]
 position = Vector2(305, 579)
+
 [node name="Textbox" parent="." instance=ExtResource("6_newmc")]
