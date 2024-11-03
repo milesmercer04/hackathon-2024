@@ -20,7 +20,20 @@ func _physics_process(delta: float) -> void:
 		velocity.x = SPEED * direction
 		move_and_slide()				# Apply velocity to move Car
 
+
 func freeze():
 	$Sprite2D.modulate = Color(5, 5, 7, 0.6) # blue shade
+	velocity.x = 0
 	frozen = true
-	
+
+
+func _on_area_2d_body_entered(body: Node2D) -> void:
+	if body.name == "Ice Bolt":
+		return
+	if body.name == "Player Character":
+		body.die()
+	else:
+		direction *= -1
+		$Sprite2D.scale.x *= -1
+		velocity.x = SPEED * direction
+		move_and_slide()
