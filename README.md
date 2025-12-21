@@ -5,6 +5,9 @@ If the temperature rises to a high enough level, a threshold is passed and the h
 
 <img width="1154" height="644" alt="image" src="https://github.com/user-attachments/assets/7c3c41c9-b51a-4279-97d7-be93d15f6ff2" />
 
+<img width="1151" height="644" alt="image" src="https://github.com/user-attachments/assets/4010aeb0-af54-40be-b323-19895cb99d7e" />
+
+
 #### What we learned
 <ul>
   <lil>Making sprites</lil>
