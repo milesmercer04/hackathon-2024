@@ -3,6 +3,8 @@ A foray into making games in Godot. None of us have ever touched Godot before an
 Control the champion of ice that freezes things to prevent them from producing carbon emissions!
 If the temperature rises to a high enough level, a threshold is passed and the heat death of the universe becomes inevitable.
 
+<img width="1154" height="644" alt="image" src="https://github.com/user-attachments/assets/7c3c41c9-b51a-4279-97d7-be93d15f6ff2" />
+
 #### What we learned
 <ul>
   <lil>Making sprites</lil>
